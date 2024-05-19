@@ -1,0 +1,105 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Adjust size as needed */
+    max-width: 600px;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px; /* Adjust width as necessary */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 15px; /* Spacing between input groups */
+}
+
+.attribute-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between; /* Ensures spacing is handled well */
+}
+
+input[type="text"], select {
+    flex-grow: 1; /* Allows inputs and select elements to fill available space */
+    margin-right: 10px; /* Adds space between elements */
+    padding: 8px; /* Better input field spacing */
+}
+
+.remove-button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: 'pointer';
+    text-align: center;
+}
+.close-button {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #db34349e;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px; /* Space after error message */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Space before the button group at the bottom */
+}
+
+button {
+    padding: 8px 16px; /* Adequate padding for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #db34349e;
+    color: white;
+    margin: 8px;
+}
+.form-field {
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    margin-left: 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

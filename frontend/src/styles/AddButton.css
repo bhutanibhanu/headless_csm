@@ -1,0 +1,39 @@
+.add-button {
+    position: relative;
+    cursor: pointer;
+}
+
+.plus-icon {
+    font-size: 24px; /* Adjusted size of the plus icon */
+    color: #3498db;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 110%; /* Position tooltip on the right of the button */
+    transform: translateY(-50%);
+    transition: visibility 0.2s ease-in-out;
+}
+
+.add-button:hover .tooltip {
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller text on smaller screens */
+    }
+
+    .add-button {
+        font-size: 20px; /* Smaller button on smaller screens */
+    }
+}
